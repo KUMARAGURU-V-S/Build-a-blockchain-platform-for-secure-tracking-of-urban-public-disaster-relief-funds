@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Disaster Relief Tracker</title>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <h2>Blockchain Document Tracker</h2>
+
+  <button onclick="connectWallet()">🔗 Connect MetaMask</button>
+  <p id="walletAddress">Wallet: Not connected</p>
+
+  <h3>Upload Document CID</h3>
+  <input type="text" id="cidInput" placeholder="Enter IPFS CID" />
+  <button onclick="uploadCID()">📤 Upload</button>
+
+  <h3>View Stored Document</h3>
+  <button onclick="viewCID()">🔍 Get Document Link</button>
+  <p id="docURL"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
